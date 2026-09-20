@@ -18,3 +18,5 @@ steps:
   displayName: 'Deployment'
 - script: git clone https://github.com/2020wa86743/FunctionalTesting.git
   displayName: 'Continuous Testing'
+- script: java -jar /home/agent1/myagent/_work/1/s/FunctionalTesting/testing.jar
+  displayName: 'Run Selenium'
