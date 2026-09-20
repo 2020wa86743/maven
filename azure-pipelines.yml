@@ -20,3 +20,5 @@ steps:
   displayName: 'Continuous Testing'
 - script: java -jar /home/agent1/myagent/_work/1/s/FunctionalTesting/testing.jar
   displayName: 'Run Selenium'
+- script: scp /home/agent1/myagent/_work/1/s/webapp/target/webapp.war qaserver@20.255.75.196:/var/lib/tomcat10/webapps/prodapp.war
+  displayName: 'Delivery'
