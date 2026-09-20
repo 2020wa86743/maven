@@ -14,3 +14,5 @@ steps:
   displayName: 'download'
 - script: cd /home/agent1/myagent/_work/1/s;mvn package
   displayName: 'Continuous build'
+- script: scp /home/agent1/myagent/_work/1/s/webapp/target/webapp.war qaserver@20.255.99.209:/var/lib/tomcat10/webapps/testapp.war
+  displayName: 'Deployment'
